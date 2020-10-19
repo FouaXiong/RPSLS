@@ -11,7 +11,6 @@ namespace RPSLS
         // Member Variable
         public string gesture;
         int score;
-        public abstract void chooseGestures();
         public List<string> Gestures;
         
         // Constructor
@@ -24,12 +23,8 @@ namespace RPSLS
         }
 
         // Member Method
-            // What a Player can do
-        public abstract void ChooseGesture()
-        {
-            Console.WriteLine("has chosen" + Gestures);
-        }
-    
+        // What a Player can do
+        public abstract void ChooseGesture();
     }
 
 
