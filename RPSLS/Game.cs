@@ -52,112 +52,132 @@ namespace RPSLS
         }
         public void CompareGesture()
         {
-            //Player 1 and 2 chose their gesture and will need to compare each gestures.
-            //IF STATEMENT to compare what player 1 chose vs what Player 2 chose. 
+            //Player 1 and 2 chose their gesture and will need to Equals each gestures.
+            //IF STATEMENT to Equals what player 1 chose vs what Player 2 chose. 
 
-            if (string.Compare(player1.gesture, "rock") == 1 && string.Compare(player2.gesture, "scissor") == 1)
+            if (string.Equals(player1.gesture, "rock") && string.Equals(player2.gesture, "scissor"))
             {
                 Console.WriteLine("Player 1 wins!");
+                player1.score += 1;
             }
-            if (string.Compare(player1.gesture, "rock") == 1 && string.Compare(player2.gesture, "lizard") == 1)
+            else if (string.Equals(player1.gesture, "rock") && string.Equals(player2.gesture, "lizard"))
             {
                 Console.WriteLine("Player 1 wins!");
+                player1.score += 1;
             }
-            if (string.Compare(player1.gesture, "paper") == 1 && string.Compare(player2.gesture, "rock") == 1)
+            else if (string.Equals(player1.gesture, "paper") && string.Equals(player2.gesture, "rock"))
             {
                 Console.WriteLine("Player 1 wins!");
+                player1.score += 1;
             }
-            if (string.Compare(player1.gesture, "paper") == 1 && string.Compare(player2.gesture, "spock") == 1)
+            else if (string.Equals(player1.gesture, "paper") && string.Equals(player2.gesture, "spock"))
             {
                 Console.WriteLine("Player 1 wins!");
+                player1.score += 1;
             }
-            if (string.Compare(player1.gesture, "scissor") == 1 && string.Compare(player2.gesture, "paper") == 1)
+            else if (string.Equals(player1.gesture, "scissor") && string.Equals(player2.gesture, "paper"))
             {
                 Console.WriteLine("Player 1 wins!");
+                player1.score += 1;
             }
-            if (string.Compare(player1.gesture, "scissor") == 1 && string.Compare(player2.gesture, "lizard") == 1)
+            else if (string.Equals(player1.gesture, "scissor") && string.Equals(player2.gesture, "lizard"))
             {
                 Console.WriteLine("Player 1 wins!");
+                player1.score += 1;
             }
-            if (string.Compare(player1.gesture, "lizard") == 1 && string.Compare(player2.gesture, "spock") == 1)
+            else if (string.Equals(player1.gesture, "lizard") && string.Equals(player2.gesture, "spock"))
             {
                 Console.WriteLine("Player 1 wins!");
+                player1.score += 1;
             }
-            if (string.Compare(player1.gesture, "lizard") == 1 && string.Compare(player2.gesture, "paper") == 1)
+            else if (string.Equals(player1.gesture, "lizard") && string.Equals(player2.gesture, "paper"))
             {
                 Console.WriteLine("Player 1 wins!");
+                player1.score += 1;
             }
-            if (string.Compare(player1.gesture, "spock") == 1 && string.Compare(player2.gesture, "rock") == 1)
+            else if (string.Equals(player1.gesture, "spock") && string.Equals(player2.gesture, "rock"))
             {
                 Console.WriteLine("Player 1 wins!");
+                player1.score += 1;
             }
-            if (string.Compare(player1.gesture, "spock") == 1 && string.Compare(player2.gesture, "scissor") == 1)
+            else if (string.Equals(player1.gesture, "spock") && string.Equals(player2.gesture, "scissor"))
             {
                 Console.WriteLine("Player 1 wins!");
-            }
-
-            if (string.Compare(player2.gesture, "rock") == 1 && string.Compare(player1.gesture, "scissor") == 1)
-            {
-                Console.WriteLine("Player 2 wins!");
-            }
-            if (string.Compare(player2.gesture, "rock") == 1 && string.Compare(player1.gesture, "lizard") == 1)
-            {
-                Console.WriteLine("Player 2 wins!");
-            }
-            if (string.Compare(player2.gesture, "paper") == 1 && string.Compare(player1.gesture, "rock") == 1)
-            {
-                Console.WriteLine("Player 2 wins!");
-            }
-            if (string.Compare(player2.gesture, "paper") == 1 && string.Compare(player1.gesture, "spock") == 1)
-            {
-                Console.WriteLine("Player 2 wins!");
-            }
-            if (string.Compare(player2.gesture, "scissor") == 1 && string.Compare(player1.gesture, "paper") == 1)
-            {
-                Console.WriteLine("Player 2 wins!");
-            }
-            if (string.Compare(player2.gesture, "scissor") == 1 && string.Compare(player1.gesture, "lizard") == 1)
-            {
-                Console.WriteLine("Player 2 wins!");
-            }
-            if (string.Compare(player2.gesture, "lizard") == 1 && string.Compare(player1.gesture, "spock") == 1)
-            {
-                Console.WriteLine("Player 2 wins!");
-            }
-            if (string.Compare(player2.gesture, "lizard") == 1 && string.Compare(player1.gesture, "paper") == 1)
-            {
-                Console.WriteLine("Player 2 wins!");
-            }
-            if (string.Compare(player2.gesture, "spock") == 1 && string.Compare(player1.gesture, "rock") == 1)
-            {
-                Console.WriteLine("Player 2 wins!");
-            }
-            if (string.Compare(player2.gesture, "spock") == 1 && string.Compare(player1.gesture, "scissor") == 1)
-            {
-                Console.WriteLine("Player 2 wins!");
-            }
-            
-            if (string.Compare(player1.gesture, "rock") == 1 && string.Compare(player2.gesture, "rock") == 1)
-            {
-                Console.WriteLine("Tie!");
-            }
-            if (string.Compare(player1.gesture, "paper") == 1 && string.Compare(player2.gesture, "paper") == 1)
-            {
-                Console.WriteLine("Tie!");
-            }
-            if (string.Compare(player1.gesture, "scissor") == 1 && string.Compare(player2.gesture, "scissor") == 1)
-            {
-                Console.WriteLine("Tie!");
-            }
-            if (string.Compare(player1.gesture, "lizard") == 1 && string.Compare(player2.gesture, "lizard") == 1)
-            {
-                Console.WriteLine("Tie!");
-            }
-            if (string.Compare(player1.gesture, "spock") == 1 && string.Compare(player2.gesture, "spock") == 1)
-            {
-                Console.WriteLine("Tie!");
+                player1.score += 1;
             }
 
+            else if (string.Equals(player2.gesture, "rock") && string.Equals(player1.gesture, "scissor"))
+            {
+                Console.WriteLine("Player 2 wins!");
+                player2.score += 1;
+            }
+            else if (string.Equals(player2.gesture, "rock") && string.Equals(player1.gesture, "lizard"))
+            {
+                Console.WriteLine("Player 2 wins!");
+                player2.score += 1;
+            }
+            else if (string.Equals(player2.gesture, "paper") && string.Equals(player1.gesture, "rock"))
+            {
+                Console.WriteLine("Player 2 wins!");
+                player2.score += 1;
+            }
+            else if (string.Equals(player2.gesture, "paper") && string.Equals(player1.gesture, "spock"))
+            {
+                Console.WriteLine("Player 2 wins!");
+                player2.score += 1;
+            }
+            else if (string.Equals(player2.gesture, "scissor") && string.Equals(player1.gesture, "paper"))
+            {
+                Console.WriteLine("Player 2 wins!");
+                player2.score += 1;
+            }
+            else if (string.Equals(player2.gesture, "scissor") && string.Equals(player1.gesture, "lizard"))
+            {
+                Console.WriteLine("Player 2 wins!");
+                player2.score += 1;
+            }
+            else if (string.Equals(player2.gesture, "lizard") && string.Equals(player1.gesture, "spock"))
+            {
+                Console.WriteLine("Player 2 wins!");
+                player2.score += 1;
+            }
+            else if (string.Equals(player2.gesture, "lizard") && string.Equals(player1.gesture, "paper"))
+            {
+                Console.WriteLine("Player 2 wins!");
+                player2.score += 1;
+            }
+            else if (string.Equals(player2.gesture, "spock") && string.Equals(player1.gesture, "rock"))
+            {
+                Console.WriteLine("Player 2 wins!");
+                player2.score += 1;
+            }
+            else if (string.Equals(player2.gesture, "spock") && string.Equals(player1.gesture, "scissor"))
+            {
+                Console.WriteLine("Player 2 wins!");
+                player2.score += 1;
+            }
+
+            else if (string.Equals(player1.gesture, "paper") && string.Equals(player2.gesture, "paper"))
+            {
+                Console.WriteLine("Tie!");
+            }
+            else if (string.Equals(player1.gesture, "rock") && string.Equals(player2.gesture, "rock"))
+            {
+                Console.WriteLine("Tie!");
+            }
+            else if (string.Equals(player1.gesture, "scissor") && string.Equals(player2.gesture, "scissor"))
+            {
+                Console.WriteLine("Tie!");
+            }
+            else if (string.Equals(player1.gesture, "lizard") && string.Equals(player2.gesture, "lizard"))
+            {
+                Console.WriteLine("Tie!");
+            }
+            else if (string.Equals(player1.gesture, "spock") && string.Equals(player2.gesture, "spock"))
+            {
+                Console.WriteLine("Tie!");
+            }
+            Console.ReadLine();
 
 
             //This method will determine which gesture will beat each other.
@@ -176,6 +196,28 @@ namespace RPSLS
 
         }
 
+        public void CompareScore()
+        {
+            // Whichever player reaches 2 points wins the game
+            while(player1.score < 2 && player2.score < 2)
+            {
+                Console.WriteLine(player1.score);
+                Console.WriteLine(player2.score);
+                RunGame();
+                CompareGesture();
+                
+            }
+            if(player1.score > player2.score)
+            {
+                Console.WriteLine("Player 1 has won the game!");
+            }
+            else
+            {
+                Console.WriteLine("Player 2 has won the game!");
+            }
+         
+            Console.ReadLine();
+        }
         
 
     }

@@ -18,7 +18,7 @@ namespace RPSLS
         {
             Gestures = new List<string>()
             {
-                "paper", "rock", "scissor", "lizard", "Spock"
+                "paper", "rock", "scissor", "lizard", "spock"
             };
             score = 0;
         }  

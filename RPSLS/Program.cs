@@ -12,8 +12,12 @@ namespace RPSLS
         {
             Game game = new Game();
             Player player = new Human("Tim");
-            player.ChooseGesture();
-
+            //player.ChooseGesture();
+            //game.GameSetup();
+            game.RunGame();
+            game.CompareGesture();
+            game.CompareScore();
+        
         }
     }
 }
