@@ -10,7 +10,7 @@ namespace RPSLS
     {
         // Member Variable
         public string gesture;
-        int score;
+        public int score;
         public List<string> Gestures;
         
         // Constructor
@@ -18,9 +18,11 @@ namespace RPSLS
         {
             Gestures = new List<string>()
             {
-                "rock", "paper", "scissor", "lizard", "Spock"
+                "paper", "rock", "scissor", "lizard", "Spock"
             };
-        }
+            score = 0;
+        }  
+
 
         // Member Method
         // What a Player can do
